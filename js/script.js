@@ -29,3 +29,29 @@ if(playerInput == '1'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+  } else if(computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Mamy remis!');
+  } else if(computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Komputer wygrywa!');
+  } else if(computerMove == 'kamień' && playerMove == 'nieznany ruch'){
+    printMessage('Błąd gry! Wybierz proszę poprawną liczbę!');
+  } else if(computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Mamy remis!');
+  } else if(computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Komputer wygrywa!');
+  } else if(computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+  } else if(computerMove == 'papier' && playerMove == 'nieznany ruch'){
+    printMessage('Błąd gry! Wybierz proszę poprawną liczbę!');
+  } else if(computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Komputer wygrywa!');
+  } else if(computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+  } else if(computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Mamy remis!');
+  } else(computerMove == 'nożyce' && playerMove == 'nieznany ruch'){
+    printMessage('Błąd gry! Wybierz proszę poprawną liczbę!');
+  }
