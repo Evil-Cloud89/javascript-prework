@@ -8,8 +8,7 @@ function playGame(playerInput){
     return 'papier';
     } else if(argMoveId == 3){
     return 'nożyce';
-    } 
-
+    }
     printMessage('Nie znam ruchu o id ' + argMoveId + '.');
     return 'nieznany ruch';
   }
