@@ -1,6 +1,5 @@
 function playGame(playerInput){
-  playerInput == '3';
-
+  
   function getMoveName(argMoveId){
     if(argMoveId == 1){
     return 'kamień';
@@ -21,21 +20,9 @@ function playGame(playerInput){
 
   printMessage('Mój ruch to: ' + argComputerMove);
 
-  //let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-
   console.log('Gracz wpisał: ' + playerInput);
 
   let argPlayerMove = getMoveName(playerInput);
-
-  /*
-  if(playerInput == '1'){
-    playerMove = 'kamień';
-  } else if(playerInput == '2'){
-    playerMove = 'papier';
-  } else if(playerInput == '3'){
-    playerMove = 'nożyce';
-  }
-  */
 
   printMessage('Twój ruch to: ' + argPlayerMove);
 
@@ -73,33 +60,6 @@ function playGame(playerInput){
     
   displayResults(argComputerMove, argPlayerMove);
 
-  /*
-  if(computerMove == 'kamień' && playerMove == 'papier'){
-    printMessage('Ty wygrywasz!');
-  } else if(computerMove == 'kamień' && playerMove == 'kamień'){
-    printMessage('Mamy remis!');
-  } else if(computerMove == 'kamień' && playerMove == 'nożyce'){
-    printMessage('Komputer wygrywa!');
-  } else if(computerMove == 'kamień' && playerMove == 'nieznany ruch'){
-    printMessage('Błąd gry! Wybierz proszę poprawną liczbę!');
-  } else if(computerMove == 'papier' && playerMove == 'papier'){
-    printMessage('Mamy remis!');
-  } else if(computerMove == 'papier' && playerMove == 'kamień'){
-    printMessage('Komputer wygrywa!');
-  } else if(computerMove == 'papier' && playerMove == 'nożyce'){
-    printMessage('Ty wygrywasz!');
-  } else if(computerMove == 'papier' && playerMove == 'nieznany ruch'){
-    printMessage('Błąd gry! Wybierz proszę poprawną liczbę!');
-  } else if(computerMove == 'nożyce' && playerMove == 'papier'){
-    printMessage('Komputer wygrywa!');
-  } else if(computerMove == 'nożyce' && playerMove == 'kamień'){
-    printMessage('Ty wygrywasz!');
-  } else if(computerMove == 'nożyce' && playerMove == 'nożyce'){
-    printMessage('Mamy remis!');
-  } else if(computerMove == 'nożyce' && playerMove == 'nieznany ruch'){
-    printMessage('Błąd gry! Wybierz proszę poprawną liczbę!');
-  }
-  */
 }
 
 clearMessages();
