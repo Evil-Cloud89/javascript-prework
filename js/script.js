@@ -1,5 +1,7 @@
 function playGame(playerInput){
   
+  clearMessages();
+
   function getMoveName(argMoveId){
     if(argMoveId == 1){
     return 'kamień';
@@ -13,19 +15,14 @@ function playGame(playerInput){
   }
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);
-
   console.log('Wylosowana liczba to: ' + randomNumber);
 
   let argComputerMove = getMoveName(randomNumber);
-
   printMessage('Mój ruch to: ' + argComputerMove);
-
   console.log('Gracz wpisał: ' + playerInput);
 
   let argPlayerMove = getMoveName(playerInput);
-
   printMessage('Twój ruch to: ' + argPlayerMove);
-
   console.log('moves:', argComputerMove, argPlayerMove);
 
   function displayResults(argComputerMove, argPlayerMove) {
@@ -57,12 +54,9 @@ function playGame(playerInput){
       printMessage('Błąd gry! Wybierz proszę poprawną liczbę!');
     }
   }
-    
   displayResults(argComputerMove, argPlayerMove);
 
 }
-
-clearMessages();
 
 document.getElementById('play-rock').addEventListener('click', function(){
   playGame(1);
